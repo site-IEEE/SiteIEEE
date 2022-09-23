@@ -46,7 +46,7 @@ body{
 .header-wrapper{
     height: 100vh;
     word-wrap: 100%;
-    background: linear-gradient(-45deg, grey,black,grey,black);
+    background: linear-gradient(-45deg, rgb(41, 41, 117),rgb(35, 26, 87),rgb(26, 26, 104),rgb(5, 32, 82));
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
@@ -56,9 +56,15 @@ body{
     animation: backgroundTransition 8s ease-in-out infinite;
 }
 
+.op{
+    flex-direction: row;
+    display: flex;
+}
+
 img{
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 69%;
 }
 
 .img2{
@@ -79,6 +85,7 @@ h2{
 .social-media{
     margin-top: 1rem;
     display: flex;
+    flex-direction: column;
 }
 
 .social-media a{
@@ -87,6 +94,8 @@ h2{
     font-size: 24px;
     padding: 1rem 4rem;
     border: 1px solid white;
+    margin-top: 20px;
+    margin-left: 30px;
     min-width: 4rem;
     display: flex;
     justify-content: center;
