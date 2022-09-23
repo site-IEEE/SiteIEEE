@@ -1,3 +1,6 @@
+* {
+    outline: 1px solid red;
+}
 /*HEAD*/
 ul{
     list-style-type: none;
@@ -151,7 +154,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     filter: grayscale(0.5);
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -163,15 +166,21 @@ a:hover{
     color: black;
 }
 
-.card-wrapper::before{
+
+.card-wrapper:after{
     content: '';
-    position: absolute;
-    height: 100px;
-    width: 100px;
     display: block;
-    border: 1px solid white;
-    opacity: 0;
-    transition: 0.3s;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border: solid 1px rgb(47, 11, 177);
+    transform: scaleX(0);  
+    transition: transform 0.3s linear;
+    z-index: -1; 
+    transform: scale(0,0);
+}
+
+.card-wrapper:hover::after{
+    transform: scale(1,1);
 }
 
 .card-wrapper p{
@@ -185,12 +194,6 @@ a:hover{
 
 .card:hover{
     filter: unset;
-}
-
-.card:hover > .card-wrapper::before{
-    opacity: 1;
-    width: 350px;
-    height: 250px;
 }
 
 /*FOOTER*/
