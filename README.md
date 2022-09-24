@@ -15,3 +15,13 @@ Versão 1.2<br />
 
 Bug Fixes<br />
 -Margin Bug for Navigation Bar<br />
+
+Versão 1.3<br />
+-add Quem Somos card<br />
+-add Projetos card<br />
+-add cards inside of card Projetos<br />
+-add a scroll in projetos card<br />
+-add github button<br />
+-add IconIEEE<br />
+-change colors of header animation<br />
+
