@@ -25,3 +25,8 @@ Versão 1.3<br />
 -add IconIEEE<br />
 -change colors of header animation<br />
 
+Versão 1.4<br />
+-add Eventos card
+-add Membros card
+-add Some Members for example
+-change background color of body

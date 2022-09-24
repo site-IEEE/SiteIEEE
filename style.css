@@ -37,7 +37,7 @@
 body {
     padding: 0;
     margin: 0;
-    color: white;
+    background-color: rgb(70, 66, 66);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -122,7 +122,7 @@ a:hover {
     }
 }
 
-/* Cards */
+/* Card Project */
 
 .container {
     width: 100%;
@@ -189,9 +189,9 @@ a:hover {
     display: flex;
     width: auto;
     height: auto;
-    min-height: 600px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    
 }
 
 .card {
@@ -206,6 +206,7 @@ a:hover {
     margin-left: 5px;
     min-height: 600px;
     background-color: rgb(248, 198, 198);
+    justify-content: center;
 }
 
 .card-img {
@@ -230,7 +231,6 @@ a:hover {
     font-size: 22px;
     margin: 5px;
     height: auto;
-    min-height: 400px;
 }
 
 .card-botton{
@@ -254,6 +254,76 @@ a:hover {
     text-align: right;
     justify-content: center;
     margin: 5px;
+}
+
+/* Card Events */
+
+.card-botton-style2{
+    flex-direction: row;
+    display: flex;
+    color: gray;
+    font-size: 15px;
+    border-top: black 2px solid;
+    margin: 10px;
+    justify-content: center;
+}
+
+/* Card Member */
+
+.cards-member{
+    flex-direction: row;
+    display: flex;
+    width: auto;
+    height: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.card-member{
+    flex-direction: column;
+    display: flex;
+    scroll-snap-align: start;
+    margin-right: 10px;
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    min-width: 300px;
+    margin-left: 5px;
+    min-height: 400px;
+    background-color: rgb(248, 198, 198);
+    justify-content: center;
+}
+
+.card-img-member{
+    width: 200px;
+    height: 200px;
+    border: black 2px solid;
+    border-radius: 69%;
+    align-self: center;
+}
+
+.card-Member-name{
+    border-bottom: black 2px solid;
+    margin: 5px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.cargo{
+    font-family: monospace;
+    margin: 7px;
+    border-bottom: black 1px solid;
+    text-align: right;
+    font-size: 15px;
+}
+
+.card-botton-member{
+    display: flex;
+    flex-direction: row;
+    border-top: black 2px solid;
+    margin-top: 5px;
+    justify-content: space-between;
 }
 
 /*FOOTER*/
