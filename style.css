@@ -194,6 +194,26 @@ a:hover {
     
 }
 
+.cards-proj {
+    flex-direction: row;
+    display: flex;
+    width: auto;
+    height: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    
+}
+
+.cards-event {
+    flex-direction: row;
+    display: flex;
+    width: auto;
+    height: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    
+}
+
 .card {
     flex-direction: column;
     display: flex;
@@ -206,7 +226,7 @@ a:hover {
     margin-left: 5px;
     min-height: 600px;
     background-color: rgb(248, 198, 198);
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .card-img {
