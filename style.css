@@ -327,14 +327,123 @@ a:hover {
 }
 
 /*FOOTER*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{  
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .footer {
-    height: 100px;
+    height: 325px;
     width: 100%;
+    background: linear-gradient(-45deg, rgb(13, 13, 36), rgb(13, 7, 46), rgb(17, 17, 71), rgb(4, 29, 75));
+    padding: 50px 0;
+}
+
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 22px;
+    color: rgb(97, 35, 97);
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li{
+    margin: 10px 0;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.9s ease;
+}
+
+.footer-col ul li a:hover{
+    color: black;
+    padding-left: 10px;
+}
+
+.footer-col .medias-sociais{
+    margin-top: 30px;
+}
+
+.footer-col .medias-sociais a{
+    display: inline-flex;
     align-items: center;
-    background-color: black;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+.footer-col .medias-sociais a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-sociais a:hover{
+    color: #415aca;
+    background-color: white;
+}
+
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color:rgb(13, 7, 46);
+}
+
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(13, 7, 46);
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
 }
 
 /*Responsivel*/

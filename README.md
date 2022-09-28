@@ -30,3 +30,9 @@ Versão 1.4<br />
 -add Membros card
 -add Some Members for example
 -change background color of body
+
+Versão 1.5<br />
+-add footer<br />
+-add redes sociais footer<br />
+-add links footer<br />
+-add Inscrever button<br />
