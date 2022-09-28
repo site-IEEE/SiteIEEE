@@ -36,3 +36,10 @@ Versão 1.5<br />
 -add redes sociais footer<br />
 -add links footer<br />
 -add Inscrever button<br />
+
+Versão 1.6<br />
+-add Js file
+-card module
+-transfer project declaration to js
+-transfer event declaration to js
+-transfer member declaration to js
