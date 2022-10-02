@@ -53,28 +53,37 @@ let SECAIIX = [
     "", //link da pagina do evento
 ]
 
-function AddMember([img,tittle,content,link]){
+function AddMember([img,cargo,name,content,link,special]){
     let code = `<li class="card-member">
-    <img class="card-img-member" src="Members IMG/Guilherme-Panesi.jpeg" alt="">
+    <img class="card-img-member" src="${img}" alt="${name}">
     <div class="card-Member-name">
-        Guilherme Panesi
+        ${name}
     </div>
     <div class="cargo">
-        Cargo: Membro do diretorio de robôtica
+        Cargo: ${cargo}
     </div>
     <div class="card-content">
-        Eu sou Gabriel Panesi.
+        ${content}
     </div>
     <div class="card-botton-member">
         <div class="special">
-            Programação, Eletrônica Calculo
+         ${special}
         </div>
         <div class="link">
-            <a href="">LinkIn</a>
+            <a href="${link}">LinkIn</a>
         </div>
 </li>`
     Member.innerHTML += code;
 }
+
+let NicolasGrisostolo = [
+    "", //Local da Imagem (rota ou link)
+    "Diretor do diretorio de robôtica", //Cargo
+    "Nicolas Grisostolo", //Nome
+    "coloque uma frase aqui", //Frase
+    "coloque as especialisdades aqui", //Especialidade
+    "", //Link LinkedIN por enquanto
+]
 
 let GulhermePanesi = [
     "Members IMG/Guilherme-Panesi.jpeg", //Local da Imagem (rota ou link)
@@ -85,8 +94,29 @@ let GulhermePanesi = [
     "", //Link LinkedIN por enquanto
 ]
 
+let MarinaTexeira = [
+    "", //Local da Imagem (rota ou link)
+    "Marina Texeira", //Nome
+    "Presidente do Ramo", //Cargo
+    "Coloque uma frase aqui", //Frase
+    "coloque as especialisdades aqui", //Especialidade
+    "", //Link LinkedIN por enquanto
+]
+
+let KlaussMarchi = [
+    "", //Local da Imagem (rota ou link)
+    "Klauss Marchi", //Nome
+    "Vice-Presidente do Ramo", //Cargo
+    "Coloque uma frase aqui", //Frase
+    "coloque as especialisdades aqui", //Especialidade
+    "", //Link LinkedIN por enquanto
+]
+
 CreateProject(Site);
 
 CreateEvent(SECAIIX);
 
+AddMember(MarinaTexeira);
+AddMember(KlaussMarchi);
+AddMember(NicolasGrisostolo);
 AddMember(GulhermePanesi);
