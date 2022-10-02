@@ -43,3 +43,7 @@ Versão 1.6<br />
 -transfer project declaration to js
 -transfer event declaration to js
 -transfer member declaration to js
+
+Versão 1.7<br />
+-change in overall design
+-card adjustments
