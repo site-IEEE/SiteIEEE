@@ -1,4 +1,10 @@
 /*HEAD*/
+:root{
+    --cinzapadrao: rgb(240, 240, 240);
+    --cinzamedio: rgb(202, 202, 202);
+    --cinzadark: rgb(134, 134, 134);
+}
+
 .barra {
     list-style-type: none;
     margin: 0;
@@ -37,7 +43,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(70, 66, 66);
+    background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -74,12 +80,14 @@ img {
 h1 {
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: white;
 }
 
 h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 
 .social-media {
@@ -155,13 +163,6 @@ h2 {
     height: 65%;
 }
 
-.card-tittle {
-    letter-spacing: 1px;
-    font-family: fantasy;
-    color: black;
-    font-size: 30px;
-}
-
 .card-text {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1px;
@@ -180,7 +181,10 @@ h2 {
     color: black;
     font-size: 45px;
     letter-spacing: 2px;
-    background-color: gray;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
     text-align: center;
     vertical-align: middle;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -203,7 +207,7 @@ h2 {
     height: auto;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    
+    border-radius: 5%;
 }
 
 .cards-event {
@@ -217,18 +221,20 @@ h2 {
 }
 
 .card {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+    position: relative; /**//**//**//**//**//**//**/
     scroll-snap-align: start;
     margin-right: 10px;
+    margin-left: 5px;
+    height: auto;
+    min-height: 600px;
     width: auto;
     max-width: 300px;
-    height: auto;
     min-width: 300px;
-    margin-left: 5px;
-    min-height: 600px;
-    background-color: rgb(248, 198, 198);
-    justify-content: space-between;
+    background-color: var(--cinzapadrao);
+    /* justify-content: space-between; */ 
+    border-radius: 5%;
 }
 
 .card-img {
@@ -240,6 +246,8 @@ h2 {
 
 .card-tittle {
     font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
     color: black;
     border-bottom: black 2px solid;
     margin: 10px;
@@ -249,24 +257,32 @@ h2 {
 
 .card-content {
     color: black;
+    display: flex;
+    justify-content: flex-start;
     text-align: left;
-    font-size: 22px;
-    margin: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: auto;
+    font-family: monospace;
 }
 
 .card-botton{
-    flex-direction: row;
     display: flex;
+    position: absolute; /**//**//**//**//**//**/
+    bottom: 0px; /**//**//**//**//**//**//**/
+    min-width: 280px;
+    flex-direction: row;
     color: gray;
     font-size: 15px;
-    border-top: black 2px solid;
-    margin: 10px;
+    border-top: var(--cinzamedio) 2px solid;
     justify-content: space-between;
+    margin: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .link{
-    background-color: red;
     justify-content: center;
     text-align: left;
     margin: 5px;
@@ -281,13 +297,17 @@ h2 {
 /* Card Events */
 
 .card-botton-style2{
-    flex-direction: row;
     display: flex;
+    position: absolute; /**//**//**//**//**//**/
+    bottom: 0px; /**//**//**//**//**//**//**/
+    min-width: 280px;
+    flex-direction: row;
     color: gray;
     font-size: 15px;
-    border-top: black 2px solid;
-    margin: 10px;
-    justify-content: center;
+    border-top: var(--cinzamedio) 2px solid;
+    margin: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Card Member */
@@ -312,39 +332,49 @@ h2 {
     min-width: 300px;
     margin-left: 5px;
     min-height: 400px;
-    background-color: rgb(248, 198, 198);
-    justify-content: center;
+    background-color: var(--cinzapadrao);
+    justify-content: space-between;
+    border-radius: 5%;
 }
 
 .card-img-member{
     width: 200px;
     height: 200px;
-    border: black 2px solid;
+    border: var(--cinzamedio) 2px solid;
     border-radius: 69%;
     align-self: center;
+    margin-top: 12px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 .card-Member-name{
-    border-bottom: black 2px solid;
-    margin: 5px;
+    border-bottom: var(--cinzamedio) 2px solid;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
-    font-family: cursive;
-    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
 }
 
 .cargo{
     font-family: monospace;
-    margin: 7px;
-    border-bottom: black 1px solid;
-    text-align: right;
+    margin: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: var(--cinzamedio) 1px solid;
+    text-align: middle;
     font-size: 15px;
 }
 
 .card-botton-member{
     display: flex;
     flex-direction: row;
-    border-top: black 2px solid;
-    margin-top: 5px;
+    border-top: var(--cinzamedio) 2px solid;
+    margin: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
     justify-content: space-between;
 }
 

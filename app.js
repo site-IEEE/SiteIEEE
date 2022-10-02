@@ -60,14 +60,14 @@ function AddMember([img,cargo,name,content,special,facebook,instagram,linkedin])
         ${name}
     </div>
     <div class="cargo">
-        Cargo: ${cargo}
+        ${cargo}
     </div>
     <div class="card-content">
         ${content}
     </div>
     <div class="card-botton-member">
         <div class="special">
-         ${special}
+        ${special}
         </div class="member-media">
         <a href="${facebook}"><i class="fa fa-facebook"></i></a>
         <a href="${instagram}"><i class="fa fa-instagram"></i></a>
