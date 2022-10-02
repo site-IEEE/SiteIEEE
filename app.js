@@ -53,7 +53,7 @@ let SECAIIX = [
     "", //link da pagina do evento
 ]
 
-function AddMember([img,cargo,name,content,link,special]){
+function AddMember([img,cargo,name,content,special,facebook,instagram,linkedin]){
     let code = `<li class="card-member">
     <img class="card-img-member" src="${img}" alt="${name}">
     <div class="card-Member-name">
@@ -68,10 +68,11 @@ function AddMember([img,cargo,name,content,link,special]){
     <div class="card-botton-member">
         <div class="special">
          ${special}
-        </div>
-        <div class="link">
-            <a href="${link}">LinkIn</a>
-        </div>
+        </div class="member-media">
+        <a href="${facebook}"><i class="fa fa-facebook"></i></a>
+        <a href="${instagram}"><i class="fa fa-instagram"></i></a>
+        <a href="${linkedin}"><i class="fa fa-linkedin"></i></a>
+    </div>
 </li>`
     Member.innerHTML += code;
 }
@@ -82,34 +83,42 @@ let NicolasGrisostolo = [
     "Nicolas Grisostolo", //Nome
     "coloque uma frase aqui", //Frase
     "coloque as especialisdades aqui", //Especialidade
-    "", //Link LinkedIN por enquanto
+    "", //Facebook
+    "", //Instagram
+    "", //Linkedin
 ]
 
 let GulhermePanesi = [
     "Members IMG/Guilherme-Panesi.jpeg", //Local da Imagem (rota ou link)
-    "Guilherme Panesi", //Nome
     "Membro do diretorio de robôtica", //Cargo
+    "Guilherme Panesi", //Nome
     "Eu sou Gabriel Panesi.", //Frase
     "Programação, Eletrônica Calculo", //Especialidade
-    "", //Link LinkedIN por enquanto
+    "", //Facebook
+    "", //Instagram
+    "", //Linkedin
 ]
 
 let MarinaTexeira = [
-    "", //Local da Imagem (rota ou link)
-    "Marina Texeira", //Nome
+    "https://static.vecteezy.com/ti/vetor-gratis/p1/1840618-imagem-perfil-icone-masculino-icone-humano-ou-pessoa-sinal-e-simbolo-gr%C3%A1tis-vetor.jpg", //Local da Imagem (rota ou link)
     "Presidente do Ramo", //Cargo
+    "Marina Texeira", //Nome
     "Coloque uma frase aqui", //Frase
     "coloque as especialisdades aqui", //Especialidade
-    "", //Link LinkedIN por enquanto
+    "", //Facebook
+    "", //Instagram
+    "", //Linkedin
 ]
 
 let KlaussMarchi = [
-    "", //Local da Imagem (rota ou link)
-    "Klauss Marchi", //Nome
+    "https://static.vecteezy.com/ti/vetor-gratis/p1/1840618-imagem-perfil-icone-masculino-icone-humano-ou-pessoa-sinal-e-simbolo-gr%C3%A1tis-vetor.jpg", //Local da Imagem (rota ou link)
     "Vice-Presidente do Ramo", //Cargo
+    "Klauss Marchi", //Nome
     "Coloque uma frase aqui", //Frase
     "coloque as especialisdades aqui", //Especialidade
-    "", //Link LinkedIN por enquanto
+    "", //Facebook
+    "", //Instagram
+    "", //Linkedin
 ]
 
 CreateProject(Site);
